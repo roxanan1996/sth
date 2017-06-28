@@ -1,0 +1,17 @@
+xst -intstyle ise -ifn "C:/Users/Alex/Desktop/lab03_skel/lab03_skel/multiplex.xst" -ofn "C:/Users/Alex/Desktop/lab03_skel/lab03_skel/multiplex.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 multiplex.ngc multiplex.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o multiplex_map.ncd multiplex.ngd multiplex.pcf 
+par -w -intstyle ise -ol high -mt off multiplex_map.ncd multiplex.ncd multiplex.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml multiplex.twx multiplex.ncd -o multiplex.twr multiplex.pcf 
+bitgen -intstyle ise -f multiplex.ut multiplex.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 multiplex.ngc multiplex.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o multiplex_map.ncd multiplex.ngd multiplex.pcf 
+par -w -intstyle ise -ol high -mt off multiplex_map.ncd multiplex.ncd multiplex.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml multiplex.twx multiplex.ncd -o multiplex.twr multiplex.pcf 
+bitgen -intstyle ise -f multiplex.ut multiplex.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc switches.ucf -p xc6slx16-csg324-3 multiplex.ngc multiplex.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o multiplex_map.ncd multiplex.ngd multiplex.pcf 
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o multiplex_map.ncd multiplex.ngd multiplex.pcf 
+par -w -intstyle ise -ol high -mt off multiplex_map.ncd multiplex.ncd multiplex.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml multiplex.twx multiplex.ncd -o multiplex.twr multiplex.pcf -ucf switches.ucf 
+bitgen -intstyle ise -f multiplex.ut multiplex.ncd 

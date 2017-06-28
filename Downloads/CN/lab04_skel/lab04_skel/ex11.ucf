@@ -1,0 +1,10 @@
+NET "clk" LOC=V10;
+NET "reset" LOC=B8;
+NET "out[0]" LOC=U16;
+NET "out[1]" LOC=V16;
+NET "out[2]" LOC=U15;
+NET "out[3]" LOC=V15;
+NET "out[4]" LOC=M11;
+NET "out[5]" LOC=N11;
+NET "out[6]" LOC=R11;
+NET "out[7]" LOC=T11;

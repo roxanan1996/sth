@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\workspace\xilinx\lab03_skel\hello_world.ncd
+OUTFILE=E:\workspace\xilinx\lab03_skel\hello_world.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=E:\workspace\xilinx\lab03_skel
+LICENSE=WebPack
+USER_INFO=__0_0_0

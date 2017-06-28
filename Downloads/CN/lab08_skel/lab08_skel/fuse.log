@@ -1,0 +1,20 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Alex/Desktop/CN/lab08_skel/lab08_skel/testestes_isim_beh.exe" -prj "C:/Users/Alex/Desktop/CN/lab08_skel/lab08_skel/testestes_beh.prj" "work.testestes" "work.glbl" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Alex/Desktop/CN/lab08_skel/lab08_skel/ual.v" into library work
+Analyzing Verilog file "C:/Users/Alex/Desktop/CN/lab08_skel/lab08_skel/testestes.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module ual
+Compiling module testestes
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\testestes_isim_beh.exe.sim\libPortability.dll".
+Compiled 3 Verilog Units
+Built simulation executable C:/Users/Alex/Desktop/CN/lab08_skel/lab08_skel/testestes_isim_beh.exe
+Fuse Memory Usage: 26948 KB
+Fuse CPU Usage: 327 ms

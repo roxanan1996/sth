@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated   -->
+<!--     by the Xilinx ISE software.  Any direct editing or        -->
+<!--     changes made to this file may result in unpredictable     -->
+<!--     behavior or data corruption.  It is strongly advised that -->
+<!--     users do not edit the contents of this file.              -->
+<!--                                                               -->
+<!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
+
+<messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/alu.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/alu.v</arg>&quot; Line <arg fmt="%d" index="2">1</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/alu_opsel.vh&apos; in file &quot;C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/alu.v&quot; line 1
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/cpu.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/cpu.v</arg>&quot; Line <arg fmt="%d" index="2">1</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/state_machine.vh&apos; in file &quot;C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/cpu.v&quot; line 1
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/decoder.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/decoder.v</arg>&quot; Line <arg fmt="%d" index="2">1</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/instruction.vh&apos; in file &quot;C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/decoder.v&quot; line 1
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/decoder.v</arg>&quot; Line <arg fmt="%d" index="2">2</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/alu_opsel.vh&apos; in file &quot;C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/decoder.v&quot; line 2
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/memory.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/memory.v</arg>&quot; Line <arg fmt="%d" index="2">1</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/instruction.vh&apos; in file &quot;C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/memory.v&quot; line 1
+</arg>
+</msg>
+
+</messages>
+

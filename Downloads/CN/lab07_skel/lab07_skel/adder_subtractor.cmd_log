@@ -1,0 +1,25 @@
+xst -intstyle ise -ifn "C:/Users/Alex/Desktop/CN/lab07_skel/lab07_skel/adder_subtractor.xst" -ofn "C:/Users/Alex/Desktop/CN/lab07_skel/lab07_skel/adder_subtractor.syr" 
+xst -intstyle ise -ifn "C:/Users/Alex/Desktop/CN/lab07_skel/lab07_skel/adder_subtractor.xst" -ofn "C:/Users/Alex/Desktop/CN/lab07_skel/lab07_skel/adder_subtractor.syr" 
+xst -intstyle ise -ifn "C:/Users/Alex/Desktop/CN/lab07_skel/lab07_skel/adder_subtractor.xst" -ofn "C:/Users/Alex/Desktop/CN/lab07_skel/lab07_skel/adder_subtractor.syr" 
+xst -intstyle ise -ifn "C:/Users/Alex/Desktop/CN/lab07_skel/lab07_skel/adder_subtractor.xst" -ofn "C:/Users/Alex/Desktop/CN/lab07_skel/lab07_skel/adder_subtractor.syr" 
+xst -intstyle ise -ifn "C:/Users/Alex/Desktop/CN/lab07_skel/lab07_skel/adder_subtractor.xst" -ofn "C:/Users/Alex/Desktop/CN/lab07_skel/lab07_skel/adder_subtractor.syr" 
+xst -intstyle ise -ifn "C:/Users/Alex/Desktop/CN/lab07_skel/lab07_skel/adder_subtractor.xst" -ofn "C:/Users/Alex/Desktop/CN/lab07_skel/lab07_skel/adder_subtractor.syr" 
+xst -intstyle ise -ifn "C:/Users/Alex/Desktop/CN/lab07_skel/lab07_skel/adder_subtractor.xst" -ofn "C:/Users/Alex/Desktop/CN/lab07_skel/lab07_skel/adder_subtractor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc adsaa.ucf -p xc6slx16-csg324-3 adder_subtractor.ngc adder_subtractor.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc adsaa.ucf -p xc6slx16-csg324-3 adder_subtractor.ngc adder_subtractor.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o adder_subtractor_map.ncd adder_subtractor.ngd adder_subtractor.pcf 
+par -w -intstyle ise -ol high -mt off adder_subtractor_map.ncd adder_subtractor.ncd adder_subtractor.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml adder_subtractor.twx adder_subtractor.ncd -o adder_subtractor.twr adder_subtractor.pcf -ucf adsaa.ucf 
+bitgen -intstyle ise -f adder_subtractor.ut adder_subtractor.ncd 
+xst -intstyle ise -ifn "C:/Users/Alex/Desktop/CN/lab07_skel/lab07_skel/adder_subtractor.xst" -ofn "C:/Users/Alex/Desktop/CN/lab07_skel/lab07_skel/adder_subtractor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc adsaa.ucf -p xc6slx16-csg324-3 adder_subtractor.ngc adder_subtractor.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o adder_subtractor_map.ncd adder_subtractor.ngd adder_subtractor.pcf 
+par -w -intstyle ise -ol high -mt off adder_subtractor_map.ncd adder_subtractor.ncd adder_subtractor.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml adder_subtractor.twx adder_subtractor.ncd -o adder_subtractor.twr adder_subtractor.pcf -ucf adsaa.ucf 
+bitgen -intstyle ise -f adder_subtractor.ut adder_subtractor.ncd 
+xst -intstyle ise -ifn "C:/Users/Alex/Desktop/CN/lab07_skel/lab07_skel/adder_subtractor.xst" -ofn "C:/Users/Alex/Desktop/CN/lab07_skel/lab07_skel/adder_subtractor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc adsaa.ucf -p xc6slx16-csg324-3 adder_subtractor.ngc adder_subtractor.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o adder_subtractor_map.ncd adder_subtractor.ngd adder_subtractor.pcf 
+par -w -intstyle ise -ol high -mt off adder_subtractor_map.ncd adder_subtractor.ncd adder_subtractor.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml adder_subtractor.twx adder_subtractor.ncd -o adder_subtractor.twr adder_subtractor.pcf -ucf adsaa.ucf 
+bitgen -intstyle ise -f adder_subtractor.ut adder_subtractor.ncd 

@@ -1,0 +1,29 @@
+Command line:
+   ripple_carry_asubstractor_fixture_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53170
+
+Mon Apr 03 15:16:49 2017
+
+
+ Elaboration Time: 0.078125 sec
+
+ Current Memory Usage: 1497.97 Meg
+
+ Total Signals          : 302
+ Total Nets             : 183
+ Total Signal Drivers   : 91
+ Total Blocks           : 53
+ Total Primitive Blocks : 33
+ Total Processes        : 93
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 280
+Total Line Count : 20
+
+ Total Simulation Time: 0.09375 sec
+
+ Current Memory Usage: 1497.97 Meg
+
+Mon Apr 03 15:17:06 2017
+

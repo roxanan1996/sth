@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "C:/Users/Alex/Desktop/lab03_skel/lab03_skel/numarator.xst" -ofn "C:/Users/Alex/Desktop/lab03_skel/lab03_skel/numarator.syr" 
+xst -intstyle ise -ifn "C:/Users/Alex/Desktop/lab03_skel/lab03_skel/numarator.xst" -ofn "C:/Users/Alex/Desktop/lab03_skel/lab03_skel/numarator.syr" 
+xst -intstyle ise -ifn "C:/Users/Alex/Desktop/lab03_skel/lab03_skel/numarator.xst" -ofn "C:/Users/Alex/Desktop/lab03_skel/lab03_skel/numarator.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim numarator.ngc numarator_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc beculeteeee.ucf -p xc6slx16-csg324-3 numarator.ngc numarator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o numarator_map.ncd numarator.ngd numarator.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc beculeteeee.ucf -p xc6slx16-csg324-3 numarator.ngc numarator.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o numarator_map.ncd numarator.ngd numarator.pcf 
+par -w -intstyle ise -ol high -mt off numarator_map.ncd numarator.ncd numarator.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml numarator.twx numarator.ncd -o numarator.twr numarator.pcf -ucf beculeteeee.ucf 
+bitgen -intstyle ise -f numarator.ut numarator.ncd 

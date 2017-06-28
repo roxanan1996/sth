@@ -1,0 +1,29 @@
+Command line:
+   ualfix_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55635
+
+Mon Apr 24 14:57:25 2017
+
+
+ Elaboration Time: 0.171875 sec
+
+ Current Memory Usage: 1496.36 Meg
+
+ Total Signals          : 18
+ Total Nets             : 32
+ Total Signal Drivers   : 9
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 12
+ Total Traceable Variables  : 25
+ Total Scalar Nets and Variables : 182
+Total Line Count : 34
+
+ Total Simulation Time: 0.171875 sec
+
+ Current Memory Usage: 1181.75 Meg
+
+Mon Apr 24 15:11:51 2017
+

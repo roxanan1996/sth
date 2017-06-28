@@ -1,0 +1,397 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: multiplex.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "multiplex.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "multiplex"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : multiplex
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Alex\Desktop\lab03_skel\lab03_skel\debouncer.v" into library work
+Parsing module <debouncer>.
+Analyzing Verilog file "C:\Users\Alex\Desktop\lab03_skel\lab03_skel\multiplex.v" into library work
+Parsing module <multiplex>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <multiplex>.
+
+Elaborating module <debouncer>.
+WARNING:HDLCompiler:413 - "C:\Users\Alex\Desktop\lab03_skel\lab03_skel\debouncer.v" Line 36: Result of 17-bit expression is truncated to fit in 16-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <multiplex>.
+    Related source file is "C:\Users\Alex\Desktop\lab03_skel\lab03_skel\multiplex.v".
+    Found 1-bit 4-to-1 multiplexer for signal <out1> created at line 44.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <multiplex> synthesized.
+
+Synthesizing Unit <debouncer>.
+    Related source file is "C:\Users\Alex\Desktop\lab03_skel\lab03_skel\debouncer.v".
+    Found 1-bit register for signal <button_tmp>.
+    Found 1-bit register for signal <button_out>.
+    Found 16-bit register for signal <count>.
+    Found 16-bit adder for signal <count[15]_GND_2_o_add_2_OUT> created at line 36.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  18 D-type flip-flop(s).
+Unit <debouncer> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 16-bit adder                                          : 4
+# Registers                                            : 12
+ 1-bit register                                        : 8
+ 16-bit register                                       : 4
+# Multiplexers                                         : 1
+ 1-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <debouncer>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <debouncer> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 4
+ 16-bit up counter                                     : 4
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+# Multiplexers                                         : 1
+ 1-bit 4-to-1 multiplexer                              : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2146 - In block <multiplex>, Counter <db4/count> <db1/count> <db3/count> <db2/count> are equivalent, XST will keep only <db4/count>.
+
+Optimizing unit <multiplex> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block multiplex, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 24
+ Flip-Flops                                            : 24
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : multiplex.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 61
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 15
+#      LUT3                        : 4
+#      LUT4                        : 2
+#      LUT6                        : 6
+#      MUXCY                       : 15
+#      VCC                         : 1
+#      XORCY                       : 16
+# FlipFlops/Latches                : 24
+#      FDE                         : 4
+#      FDR                         : 20
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 7
+#      IBUF                        : 5
+#      OBUF                        : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              24  out of  18224     0%  
+ Number of Slice LUTs:                   28  out of   9112     0%  
+    Number used as Logic:                28  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     32
+   Number with an unused Flip Flop:       8  out of     32    25%  
+   Number with an unused LUT:             4  out of     32    12%  
+   Number of fully used LUT-FF pairs:    20  out of     32    62%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                           8
+ Number of bonded IOBs:                   8  out of    232     3%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 24    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.636ns (Maximum Frequency: 379.391MHz)
+   Minimum input arrival time before clock: 2.744ns
+   Maximum output required time after clock: 4.730ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.636ns (frequency: 379.391MHz)
+  Total number of paths / destination ports: 212 / 24
+-------------------------------------------------------------------------
+Delay:               2.636ns (Levels of Logic = 1)
+  Source:            db4/count_7 (FF)
+  Destination:       db4/button_out (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: db4/count_7 to db4/button_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.447   0.981  db4/count_7 (db4/count_7)
+     LUT6:I0->O            4   0.203   0.683  db1/GND_2_o_GND_2_o_equal_5_o2 (db1/GND_2_o_GND_2_o_equal_5_o2)
+     FDE:CE                    0.322          db1/button_out
+    ----------------------------------------
+    Total                      2.636ns (0.972ns logic, 1.664ns route)
+                                       (36.9% logic, 63.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 24 / 24
+-------------------------------------------------------------------------
+Offset:              2.744ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       db4/button_tmp (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to db4/button_tmp
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            20   1.222   1.092  reset_IBUF (reset_IBUF)
+     FDR:R                     0.430          db4/button_tmp
+    ----------------------------------------
+    Total                      2.744ns (1.652ns logic, 1.092ns route)
+                                       (60.2% logic, 39.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 8 / 2
+-------------------------------------------------------------------------
+Offset:              4.730ns (Levels of Logic = 2)
+  Source:            db2/button_out (FF)
+  Destination:       out1 (PAD)
+  Source Clock:      clk rising
+
+  Data Path: db2/button_out to out1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              4   0.447   0.931  db2/button_out (db2/button_out)
+     LUT4:I0->O            1   0.203   0.579  Mmux_out111 (out1_OBUF)
+     OBUF:I->O                 2.571          out1_OBUF (out1)
+    ----------------------------------------
+    Total                      4.730ns (3.221ns logic, 1.509ns route)
+                                       (68.1% logic, 31.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.636|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.71 secs
+ 
+--> 
+
+Total memory usage is 283236 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

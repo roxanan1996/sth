@@ -1,0 +1,75 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml adder_subtractor.twx adder_subtractor.ncd -o
+adder_subtractor.twr adder_subtractor.pcf -ucf adsaa.ucf
+
+Design file:              adder_subtractor.ncd
+Physical constraint file: adder_subtractor.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A<0>           |R<0>           |    7.450|
+A<0>           |R<1>           |    7.528|
+A<0>           |R<2>           |    7.750|
+A<0>           |R<3>           |    7.999|
+A<1>           |R<1>           |    7.489|
+A<1>           |R<2>           |    7.906|
+A<1>           |R<3>           |    8.155|
+A<2>           |R<2>           |    7.576|
+A<2>           |R<3>           |    7.337|
+A<3>           |R<3>           |    7.912|
+B<0>           |R<0>           |    7.738|
+B<0>           |R<1>           |    7.816|
+B<0>           |R<2>           |    8.281|
+B<0>           |R<3>           |    8.530|
+B<1>           |R<1>           |    8.021|
+B<1>           |R<2>           |    8.062|
+B<1>           |R<3>           |    8.311|
+B<2>           |R<2>           |    7.559|
+B<2>           |R<3>           |    7.306|
+B<3>           |R<3>           |    8.424|
+button         |R<1>           |   11.114|
+button         |R<2>           |   11.023|
+button         |R<3>           |   10.526|
+---------------+---------------+---------+
+
+
+Analysis completed Mon Apr 10 15:31:17 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 246 MB
+
+
+

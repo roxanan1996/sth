@@ -1,0 +1,425 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: ex2.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ex2.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ex2"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : ex2
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Alex\Desktop\CN\lab04_skel\lab04_skel\debouncer.v" into library work
+Parsing module <debouncer>.
+Analyzing Verilog file "C:\Users\Alex\Desktop\CN\lab04_skel\lab04_skel\ex2.v" into library work
+Parsing module <ex2>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <ex2>.
+
+Elaborating module <debouncer>.
+WARNING:HDLCompiler:413 - "C:\Users\Alex\Desktop\CN\lab04_skel\lab04_skel\debouncer.v" Line 41: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:634 - "C:\Users\Alex\Desktop\CN\lab04_skel\lab04_skel\debouncer.v" Line 28: Net <button_debounced> does not have a driver.
+WARNING:HDLCompiler:189 - "C:\Users\Alex\Desktop\CN\lab04_skel\lab04_skel\ex2.v" Line 44: Size mismatch in connection of port <count>. Formal port size is 8-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\Alex\Desktop\CN\lab04_skel\lab04_skel\ex2.v" Line 44: Assignment to A ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "C:\Users\Alex\Desktop\CN\lab04_skel\lab04_skel\ex2.v" Line 45: Size mismatch in connection of port <count>. Formal port size is 8-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\Alex\Desktop\CN\lab04_skel\lab04_skel\ex2.v" Line 45: Assignment to G ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "C:\Users\Alex\Desktop\CN\lab04_skel\lab04_skel\ex2.v" Line 46: Size mismatch in connection of port <count>. Formal port size is 8-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\Alex\Desktop\CN\lab04_skel\lab04_skel\ex2.v" Line 46: Assignment to T ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "C:\Users\Alex\Desktop\CN\lab04_skel\lab04_skel\ex2.v" Line 47: Size mismatch in connection of port <count>. Formal port size is 8-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\Alex\Desktop\CN\lab04_skel\lab04_skel\ex2.v" Line 47: Assignment to C ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "C:\Users\Alex\Desktop\CN\lab04_skel\lab04_skel\ex2.v" Line 36: Net <A1> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Alex\Desktop\CN\lab04_skel\lab04_skel\ex2.v" Line 37: Net <G1> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Alex\Desktop\CN\lab04_skel\lab04_skel\ex2.v" Line 38: Net <T1> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Alex\Desktop\CN\lab04_skel\lab04_skel\ex2.v" Line 39: Net <C1> does not have a driver.
+WARNING:Xst:2972 - "C:\Users\Alex\Desktop\CN\lab04_skel\lab04_skel\ex2.v" line 44. All outputs of instance <db> of block <debouncer> are unconnected in block <ex2>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Alex\Desktop\CN\lab04_skel\lab04_skel\ex2.v" line 45. All outputs of instance <db1> of block <debouncer> are unconnected in block <ex2>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Alex\Desktop\CN\lab04_skel\lab04_skel\ex2.v" line 46. All outputs of instance <db2> of block <debouncer> are unconnected in block <ex2>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Alex\Desktop\CN\lab04_skel\lab04_skel\ex2.v" line 47. All outputs of instance <db3> of block <debouncer> are unconnected in block <ex2>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ex2>.
+    Related source file is "C:\Users\Alex\Desktop\CN\lab04_skel\lab04_skel\ex2.v".
+WARNING:Xst:647 - Input <A> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <G> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <T> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <C> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Users\Alex\Desktop\CN\lab04_skel\lab04_skel\ex2.v" line 44: Output port <count> of the instance <db> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Alex\Desktop\CN\lab04_skel\lab04_skel\ex2.v" line 45: Output port <count> of the instance <db1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Alex\Desktop\CN\lab04_skel\lab04_skel\ex2.v" line 46: Output port <count> of the instance <db2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Alex\Desktop\CN\lab04_skel\lab04_skel\ex2.v" line 47: Output port <count> of the instance <db3> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <A1> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <G1> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <T1> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <C1> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 3-bit register for signal <current_state>.
+    Found 8x1-bit Read Only RAM for signal <current_state[2]_GND_3_o_Mux_13_o>
+WARNING:Xst:737 - Found 1-bit latch for signal <next<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <next<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <next<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   3 D-type flip-flop(s).
+	inferred   3 Latch(s).
+Unit <ex2> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x1-bit single-port Read Only RAM                     : 1
+# Registers                                            : 1
+ 3-bit register                                        : 1
+# Latches                                              : 3
+ 1-bit latch                                           : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <ex2>.
+INFO:Xst:3231 - The small RAM <Mram_current_state[2]_GND_3_o_Mux_13_o> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 1-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <current_state> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <ex2> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x1-bit single-port distributed Read Only RAM         : 1
+# Registers                                            : 3
+ Flip-Flops                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ex2> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ex2, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 3
+ Flip-Flops                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ex2.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2
+#      LUT3                        : 2
+# FlipFlops/Latches                : 6
+#      FDR                         : 3
+#      LDC                         : 3
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 2
+#      IBUF                        : 1
+#      OBUF                        : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               6  out of  18224     0%  
+ Number of Slice LUTs:                    2  out of   9112     0%  
+    Number used as Logic:                 2  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      8
+   Number with an unused Flip Flop:       2  out of      8    25%  
+   Number with an unused LUT:             6  out of      8    75%  
+   Number of fully used LUT-FF pairs:     0  out of      8     0%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                           7
+ Number of bonded IOBs:                   3  out of    232     1%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+----------------------------------------------------------------------------------+------------------------+-------+
+Clock Signal                                                                      | Clock buffer(FF name)  | Load  |
+----------------------------------------------------------------------------------+------------------------+-------+
+Mram_current_state[2]_GND_3_o_Mux_13_o(Mram_current_state[2]_GND_3_o_Mux_13_o11:O)| NONE(*)(next_1)        | 3     |
+clk                                                                               | BUFGP                  | 3     |
+----------------------------------------------------------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 2.396ns
+   Maximum output required time after clock: 4.681ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Mram_current_state[2]_GND_3_o_Mux_13_o'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              2.396ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       next_1 (LATCH)
+  Destination Clock: Mram_current_state[2]_GND_3_o_Mux_13_o falling
+
+  Data Path: reset to next_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.222   0.744  reset_IBUF (reset_IBUF)
+     LDC:CLR                   0.430          next_1
+    ----------------------------------------
+    Total                      2.396ns (1.652ns logic, 0.744ns route)
+                                       (69.0% logic, 31.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              2.396ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       current_state_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to current_state_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.222   0.744  reset_IBUF (reset_IBUF)
+     FDR:R                     0.430          current_state_0
+    ----------------------------------------
+    Total                      2.396ns (1.652ns logic, 0.744ns route)
+                                       (69.0% logic, 31.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 3 / 1
+-------------------------------------------------------------------------
+Offset:              4.681ns (Levels of Logic = 2)
+  Source:            current_state_2 (FF)
+  Destination:       out (PAD)
+  Source Clock:      clk rising
+
+  Data Path: current_state_2 to out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.447   0.879  current_state_2 (current_state_2)
+     LUT3:I0->O            1   0.205   0.579  out<2>1 (out_OBUF)
+     OBUF:I->O                 2.571          out_OBUF (out)
+    ----------------------------------------
+    Total                      4.681ns (3.223ns logic, 1.458ns route)
+                                       (68.9% logic, 31.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Mram_current_state[2]_GND_3_o_Mux_13_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    1.134|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+--------------------------------------+---------+---------+---------+---------+
+                                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------+---------+---------+---------+---------+
+Mram_current_state[2]_GND_3_o_Mux_13_o|         |    1.179|         |         |
+--------------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.11 secs
+ 
+--> 
+
+Total memory usage is 283260 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   29 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

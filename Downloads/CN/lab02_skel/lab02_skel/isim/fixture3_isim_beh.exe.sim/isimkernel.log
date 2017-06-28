@@ -1,0 +1,29 @@
+Command line:
+   fixture3_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  54035
+
+Mon Mar 06 15:15:53 2017
+
+
+ Elaboration Time: 0.15625 sec
+
+ Current Memory Usage: 1336.96 Meg
+
+ Total Signals          : 30
+ Total Nets             : 26
+ Total Signal Drivers   : 14
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 16
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 109
+Total Line Count : 30
+
+ Total Simulation Time: 0.40625 sec
+
+ Current Memory Usage: 707.781 Meg
+
+Mon Mar 06 15:19:13 2017
+

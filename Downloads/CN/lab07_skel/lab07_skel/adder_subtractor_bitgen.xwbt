@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Alex\Desktop\CN\lab07_skel\lab07_skel\adder_subtractor.ncd
+OUTFILE=C:\Users\Alex\Desktop\CN\lab07_skel\lab07_skel\adder_subtractor.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Users\Alex\Desktop\CN\lab07_skel\lab07_skel
+LICENSE=WebPack
+USER_INFO=211315844_0_0_136

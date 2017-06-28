@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/ripple_carry_asubstractor_fixture_isim_beh.exe" -prj "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/ripple_carry_asubstractor_fixture_beh.prj" "work.ripple_carry_asubstractor_fixture" "work.glbl" 

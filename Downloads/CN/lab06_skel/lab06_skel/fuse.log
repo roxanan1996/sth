@@ -1,0 +1,32 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/ripple_carry_asubstractor_fixture_isim_beh.exe" -prj "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/ripple_carry_asubstractor_fixture_beh.prj" "work.ripple_carry_asubstractor_fixture" "work.glbl" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/half_adder.v" into library work
+Analyzing Verilog file "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/full_adder.v" into library work
+Analyzing Verilog file "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/ripple_carry_adder.v" into library work
+Analyzing Verilog file "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/ripple_carry_subtractor.v" into library work
+Analyzing Verilog file "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/ripple_carry_asubstractor_fixture.v" into library work
+WARNING:HDLCompiler:1818 - "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/ripple_carry_asubstractor_fixture.v" Line 47: Invalid size of integer constant literal
+WARNING:HDLCompiler:1818 - "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/ripple_carry_asubstractor_fixture.v" Line 48: Invalid size of integer constant literal
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/ripple_carry_subtractor.v" Line 15: Port Cout is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/ripple_carry_subtractor.v" Line 22: Port Cout is not connected to this instance
+WARNING:HDLCompiler:189 - "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/ripple_carry_subtractor.v" Line 17: Size mismatch in connection of port <A>. Formal port size is 8-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/ripple_carry_subtractor.v" Line 19: Size mismatch in connection of port <Cin>. Formal port size is 1-bit while actual signal size is 32-bit.
+Completed static elaboration
+Compiling module half_adder
+Compiling module full_adder
+Compiling module ripple_carry_adder
+Compiling module ripple_carry_subtractor
+Compiling module ripple_carry_asubstractor_fixtur...
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\ripple_carry_asubstractor_fixture_isim_beh.exe.sim\libPortability.dll".
+Compiled 6 Verilog Units
+Built simulation executable C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/ripple_carry_asubstractor_fixture_isim_beh.exe
+Fuse Memory Usage: 27336 KB
+Fuse CPU Usage: 359 ms

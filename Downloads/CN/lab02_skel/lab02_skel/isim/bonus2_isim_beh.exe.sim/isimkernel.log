@@ -1,0 +1,29 @@
+Command line:
+   bonus2_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  54141
+
+Mon Mar 06 15:58:04 2017
+
+
+ Elaboration Time: 0.125 sec
+
+ Current Memory Usage: 1494.29 Meg
+
+ Total Signals          : 16
+ Total Nets             : 16
+ Total Signal Drivers   : 6
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 8
+ Total Traceable Variables  : 19
+ Total Scalar Nets and Variables : 97
+Total Line Count : 19
+
+ Total Simulation Time: 0.125 sec
+
+ Current Memory Usage: 1494.29 Meg
+
+Mon Mar 06 15:58:09 2017
+

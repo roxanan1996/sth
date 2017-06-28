@@ -1,0 +1,22 @@
+NET "in0[0]"        LOC = T10;
+NET "in0[1]"        LOC = T9;
+NET "in0[2]"        LOC = V9;
+NET "in0[3]"        LOC = M8;
+NET "in1[0]"        LOC = N8;
+NET "in1[1]"        LOC = U8;
+NET "in1[2]"        LOC = V8;
+NET "in1[3]"        LOC = T5;
+
+NET "sel[0]"        LOC = D9;
+NET "sel[1]"        LOC = B8;
+NET "sel[2]"        LOC = C4;
+
+NET "out[0]"          LOC = U16;
+NET "out[1]"          LOC = V16;
+NET "out[2]"          LOC = U15;
+NET "out[3]"          LOC = V15;
+NET "out[4]"          LOC = M11;
+NET "out[5]"          LOC = N11;
+NET "out[6]"          LOC = R11;
+NET "out[7]"          LOC = T11;
+

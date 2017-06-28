@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/Alex/Desktop/lab03_skel/lab03_skel/BECULET.xst" -ofn "C:/Users/Alex/Desktop/lab03_skel/lab03_skel/BECULET.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hello_world.ucf -p xc6slx16-csg324-3 BECULET.ngc BECULET.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BECULET_map.ncd BECULET.ngd BECULET.pcf 
+par -w -intstyle ise -ol high -mt off BECULET_map.ncd BECULET.ncd BECULET.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BECULET.twx BECULET.ncd -o BECULET.twr BECULET.pcf -ucf hello_world.ucf 
+bitgen -intstyle ise -f BECULET.ut BECULET.ncd 

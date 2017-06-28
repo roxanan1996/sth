@@ -1,0 +1,165 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml ual.twx ual.ncd -o ual.twr ual.pcf -ucf ucfual.ucf
+
+Design file:              ual.ncd
+Physical constraint file: ual.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock sel<0>
+------------+------------+------------+------------+------------+-----------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                       | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)      | Phase  |
+------------+------------+------------+------------+------------+-----------------------+--------+
+in0<0>      |    3.645(F)|      SLOW  |    3.929(F)|      SLOW  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+in0<1>      |    2.806(F)|      SLOW  |    3.789(F)|      SLOW  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+in0<2>      |    2.855(F)|      SLOW  |    3.231(F)|      SLOW  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+in0<3>      |    2.837(F)|      SLOW  |    3.452(F)|      SLOW  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+in1<0>      |    2.858(F)|      SLOW  |    3.371(F)|      SLOW  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+in1<1>      |    2.270(F)|      SLOW  |    3.940(F)|      SLOW  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+in1<2>      |    1.135(F)|      SLOW  |    3.361(F)|      SLOW  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+in1<3>      |    0.088(F)|      SLOW  |    3.065(F)|      SLOW  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+------------+------------+------------+------------+------------+-----------------------+--------+
+
+Setup/Hold to clock sel<1>
+------------+------------+------------+------------+------------+-----------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                       | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)      | Phase  |
+------------+------------+------------+------------+------------+-----------------------+--------+
+in0<0>      |    3.768(F)|      SLOW  |    3.797(F)|      SLOW  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+in0<1>      |    2.929(F)|      SLOW  |    3.657(F)|      SLOW  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+in0<2>      |    2.978(F)|      SLOW  |    3.099(F)|      SLOW  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+in0<3>      |    2.960(F)|      SLOW  |    3.320(F)|      SLOW  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+in1<0>      |    2.981(F)|      SLOW  |    3.239(F)|      SLOW  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+in1<1>      |    2.393(F)|      SLOW  |    3.808(F)|      SLOW  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+in1<2>      |    1.258(F)|      SLOW  |    3.229(F)|      SLOW  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+in1<3>      |    0.211(F)|      SLOW  |    2.933(F)|      SLOW  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+------------+------------+------------+------------+------------+-----------------------+--------+
+
+Setup/Hold to clock sel<2>
+------------+------------+------------+------------+------------+-----------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                       | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)      | Phase  |
+------------+------------+------------+------------+------------+-----------------------+--------+
+in0<0>      |    2.503(F)|      SLOW  |    5.130(F)|      SLOW  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+in0<1>      |    1.664(F)|      SLOW  |    4.990(F)|      SLOW  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+in0<2>      |    1.713(F)|      SLOW  |    4.432(F)|      SLOW  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+in0<3>      |    1.695(F)|      SLOW  |    4.653(F)|      SLOW  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+in1<0>      |    1.716(F)|      SLOW  |    4.572(F)|      SLOW  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+in1<1>      |    1.128(F)|      SLOW  |    5.141(F)|      SLOW  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+in1<2>      |    0.255(F)|      FAST  |    4.562(F)|      SLOW  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+in1<3>      |   -0.730(F)|      FAST  |    4.266(F)|      SLOW  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+------------+------------+------------+------------+------------+-----------------------+--------+
+
+Clock sel<0> to Pad
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                       | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)      | Phase  |
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+out<0>      |        11.584(F)|      SLOW  |         6.768(F)|      FAST  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+out<1>      |        11.584(F)|      SLOW  |         6.768(F)|      FAST  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+out<2>      |        11.414(F)|      SLOW  |         6.726(F)|      FAST  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+out<3>      |        11.414(F)|      SLOW  |         6.726(F)|      FAST  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+out<4>      |        10.761(F)|      SLOW  |         6.261(F)|      FAST  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+out<5>      |        10.761(F)|      SLOW  |         6.261(F)|      FAST  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+out<6>      |        10.660(F)|      SLOW  |         6.224(F)|      FAST  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+out<7>      |        10.660(F)|      SLOW  |         6.224(F)|      FAST  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+
+Clock sel<1> to Pad
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                       | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)      | Phase  |
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+out<0>      |        11.452(F)|      SLOW  |         6.663(F)|      FAST  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+out<1>      |        11.452(F)|      SLOW  |         6.663(F)|      FAST  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+out<2>      |        11.282(F)|      SLOW  |         6.621(F)|      FAST  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+out<3>      |        11.282(F)|      SLOW  |         6.621(F)|      FAST  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+out<4>      |        10.629(F)|      SLOW  |         6.156(F)|      FAST  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+out<5>      |        10.629(F)|      SLOW  |         6.156(F)|      FAST  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+out<6>      |        10.528(F)|      SLOW  |         6.119(F)|      FAST  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+out<7>      |        10.528(F)|      SLOW  |         6.119(F)|      FAST  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+
+Clock sel<2> to Pad
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                       | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)      | Phase  |
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+out<0>      |        12.785(F)|      SLOW  |         7.561(F)|      FAST  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+out<1>      |        12.785(F)|      SLOW  |         7.561(F)|      FAST  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+out<2>      |        12.615(F)|      SLOW  |         7.519(F)|      FAST  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+out<3>      |        12.615(F)|      SLOW  |         7.519(F)|      FAST  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+out<4>      |        11.962(F)|      SLOW  |         7.054(F)|      FAST  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+out<5>      |        11.962(F)|      SLOW  |         7.054(F)|      FAST  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+out<6>      |        11.861(F)|      SLOW  |         7.017(F)|      FAST  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+out<7>      |        11.861(F)|      SLOW  |         7.017(F)|      FAST  |sel[2]_GND_2_o_Mux_25_o|   0.000|
+------------+-----------------+------------+-----------------+------------+-----------------------+--------+
+
+Clock to Setup on destination clock sel<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sel<0>         |         |         |    1.875|    1.875|
+sel<1>         |         |         |    1.196|    1.196|
+sel<2>         |         |         |    1.848|    1.848|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sel<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sel<0>         |         |         |    1.998|    1.998|
+sel<1>         |         |         |    1.319|    1.319|
+sel<2>         |         |         |    1.971|    1.971|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sel<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sel<0>         |         |         |    0.733|    0.733|
+sel<1>         |         |         |    0.058|    0.058|
+sel<2>         |         |         |    0.706|    0.706|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Mon Apr 24 15:35:51 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 245 MB
+
+
+

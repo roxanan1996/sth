@@ -1,0 +1,10 @@
+NET "button1"    LOC = T10;
+NET "button2"    LOC = T9;
+NET "sel0"    	  LOC = V9;
+NET "sel1"    	  LOC = M8;
+
+NET "out1"    LOC = U16;
+NET "out2"    LOC = V16;
+
+NET "reset"     LOC = D9;
+NET "clk"       LOC = V10;

@@ -1,0 +1,386 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: ual.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ual.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ual"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : ual
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Alex\Desktop\CN\lab08_skel\lab08_skel\ual.v" into library work
+Parsing module <ual>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <ual>.
+WARNING:HDLCompiler:413 - "C:\Users\Alex\Desktop\CN\lab08_skel\lab08_skel\ual.v" Line 32: Result of 37-bit expression is truncated to fit in 9-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ual>.
+    Related source file is "C:\Users\Alex\Desktop\CN\lab08_skel\lab08_skel\ual.v".
+    Found 5-bit subtractor for signal <GND_1_o_GND_1_o_sub_23_OUT> created at line 55.
+    Found 32-bit adder for signal <n0044> created at line 32.
+    Found 9-bit adder for signal <GND_1_o_in0[3]_add_2_OUT> created at line 38.
+    Found 9-bit adder for signal <GND_1_o_GND_1_o_add_3_OUT> created at line 39.
+    Found 9-bit adder for signal <in1[0]_in0[3]_add_5_OUT> created at line 38.
+    Found 9-bit adder for signal <in1[0]_GND_1_o_add_6_OUT> created at line 39.
+    Found 9-bit adder for signal <in1[0]_in0[3]_add_8_OUT> created at line 38.
+    Found 9-bit adder for signal <in1[0]_GND_1_o_add_9_OUT> created at line 39.
+    Found 9-bit adder for signal <in1[0]_in0[3]_add_11_OUT> created at line 38.
+    Found 9-bit adder for signal <in1[0]_GND_1_o_add_12_OUT> created at line 39.
+    Found 5-bit adder for signal <n0121> created at line 54.
+    Found 9-bit 4-to-1 multiplexer for signal <n0048> created at line 36.
+    Found 9-bit 4-to-1 multiplexer for signal <n0051> created at line 36.
+    Found 9-bit 4-to-1 multiplexer for signal <n0054> created at line 36.
+    Found 9-bit 4-to-1 multiplexer for signal <P> created at line 36.
+    Found 1-bit 5-to-1 multiplexer for signal <sel[2]_out[7]_Mux_24_o> created at line 51.
+    Found 1-bit 5-to-1 multiplexer for signal <sel[2]_out[6]_Mux_26_o> created at line 51.
+    Found 1-bit 5-to-1 multiplexer for signal <sel[2]_out[5]_Mux_28_o> created at line 51.
+    Found 1-bit 5-to-1 multiplexer for signal <sel[2]_out[4]_Mux_30_o> created at line 51.
+    Found 1-bit 5-to-1 multiplexer for signal <sel[2]_out[3]_Mux_32_o> created at line 51.
+    Found 1-bit 5-to-1 multiplexer for signal <sel[2]_out[2]_Mux_34_o> created at line 51.
+    Found 1-bit 5-to-1 multiplexer for signal <sel[2]_out[1]_Mux_36_o> created at line 51.
+    Found 1-bit 5-to-1 multiplexer for signal <sel[2]_out[0]_Mux_38_o> created at line 51.
+WARNING:Xst:737 - Found 1-bit latch for signal <out<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   7 Adder/Subtractor(s).
+	inferred   8 Latch(s).
+	inferred  20 Multiplexer(s).
+Unit <ual> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 7
+ 32-bit adder                                          : 1
+ 5-bit adder                                           : 1
+ 5-bit subtractor                                      : 1
+ 9-bit adder                                           : 4
+# Latches                                              : 8
+ 1-bit latch                                           : 8
+# Multiplexers                                         : 20
+ 1-bit 5-to-1 multiplexer                              : 8
+ 9-bit 2-to-1 multiplexer                              : 12
+# Xors                                                 : 1
+ 8-bit xor2                                            : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 7
+ 4-bit adder                                           : 1
+ 5-bit adder                                           : 1
+ 5-bit subtractor                                      : 1
+ 9-bit adder                                           : 4
+# Multiplexers                                         : 20
+ 1-bit 5-to-1 multiplexer                              : 8
+ 9-bit 2-to-1 multiplexer                              : 12
+# Xors                                                 : 1
+ 8-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <out_7> in Unit <ual> is equivalent to the following FF/Latch, which will be removed : <out_6> 
+
+Optimizing unit <ual> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ual, actual ratio is 0.
+Latch out_7 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ual.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 40
+#      LUT2                        : 4
+#      LUT3                        : 1
+#      LUT4                        : 6
+#      LUT5                        : 6
+#      LUT6                        : 22
+#      MUXF7                       : 1
+# FlipFlops/Latches                : 8
+#      LD                          : 8
+# IO Buffers                       : 19
+#      IBUF                        : 11
+#      OBUF                        : 8
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                   39  out of   9112     0%  
+    Number used as Logic:                39  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     39
+   Number with an unused Flip Flop:      39  out of     39   100%  
+   Number with an unused LUT:             0  out of     39     0%  
+   Number of fully used LUT-FF pairs:     0  out of     39     0%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          19
+ Number of bonded IOBs:                  19  out of    232     8%  
+    IOB Flip Flops/Latches:               8
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------+------------------------+-------+
+Clock Signal                                       | Clock buffer(FF name)  | Load  |
+---------------------------------------------------+------------------------+-------+
+sel[2]_GND_2_o_Mux_25_o(sel[2]_GND_2_o_Mux_25_o1:O)| NONE(*)(out_7)         | 8     |
+---------------------------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 8.582ns
+   Maximum output required time after clock: 3.648ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'sel[2]_GND_2_o_Mux_25_o'
+  Total number of paths / destination ports: 979 / 8
+-------------------------------------------------------------------------
+Offset:              8.582ns (Levels of Logic = 7)
+  Source:            in1<0> (PAD)
+  Destination:       out_7 (LATCH)
+  Destination Clock: sel[2]_GND_2_o_Mux_25_o falling
+
+  Data Path: in1<0> to out_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            15   1.222   1.346  in1_0_IBUF (in1_0_IBUF)
+     LUT6:I0->O            1   0.203   0.944  Mmux_n00513_rs_lut<7>1 (Mmux_n00513_rs_lut<7>)
+     LUT6:I0->O            3   0.203   1.015  Mmux_n00513_rs_xor<8>11 (Mmux_n00513_split<8>)
+     LUT6:I0->O            3   0.203   0.879  Mmux_n00543_rs_lut<7>1 (Mmux_n00543_rs_lut<7>)
+     LUT4:I1->O            3   0.205   0.995  Mmux_n00543_rs_xor<8>11 (Mmux_n00543_split<8>)
+     LUT5:I0->O            1   0.203   0.924  Mmux_P3_rs_lut<8>1 (Mmux_P3_rs_lut<8>)
+     LUT6:I1->O            2   0.203   0.000  sel[2]_out[6]_Mux_26_o1 (sel[2]_out[6]_Mux_26_o)
+     LD:D                      0.037          out_7
+    ----------------------------------------
+    Total                      8.582ns (2.479ns logic, 6.103ns route)
+                                       (28.9% logic, 71.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'sel[2]_GND_2_o_Mux_25_o'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              3.648ns (Levels of Logic = 1)
+  Source:            out_7_1 (LATCH)
+  Destination:       out<7> (PAD)
+  Source Clock:      sel[2]_GND_2_o_Mux_25_o falling
+
+  Data Path: out_7_1 to out<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.498   0.579  out_7_1 (out_7_1)
+     OBUF:I->O                 2.571          out_7_OBUF (out<7>)
+    ----------------------------------------
+    Total                      3.648ns (3.069ns logic, 0.579ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.66 secs
+ 
+--> 
+
+Total memory usage is 279856 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

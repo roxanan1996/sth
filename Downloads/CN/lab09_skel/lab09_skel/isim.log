@@ -1,0 +1,108 @@
+ISim log file
+Running: C:\Users\Alex\Desktop\CN\lab09_skel\lab09_skel\test_cpu_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/test_cpu_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+WARNING: File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/cpu.v" Line 41.  For instance uut/decoder_unit/, width 32 of formal port instruction is not equal to width 1 of actual signal buffer_instruction.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+WARNING: File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/cpu.v" Line 41.  For instance uut/decoder_unit/, width 32 of formal port instruction is not equal to width 1 of actual signal buffer_instruction.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+WARNING: File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/cpu.v" Line 41.  For instance uut/decoder_unit/, width 32 of formal port instruction is not equal to width 1 of actual signal buffer_instruction.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+WARNING: File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/cpu.v" Line 41.  For instance uut/decoder_unit/, width 32 of formal port instruction is not equal to width 1 of actual signal buffer_instruction.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 105 ns : File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/cpu.v" Line 88
+# step
+Stopped at time : 105 ns : File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/cpu.v" Line 94
+# step
+Stopped at time : 105 ns : File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/cpu.v" Line 95
+# step
+Stopped at time : 105 ns : File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/cpu.v" Line 96
+# step
+Stopped at time : 105 ns : File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/cpu.v" Line 97
+# step
+Stopped at time : 105 ns : File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/cpu.v" Line 99
+# step
+Stopped at time : 105 ns : File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/cpu.v" Line 84
+# step
+Stopped at time : 105 ns : File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/cpu.v" Line 64
+# step
+Stopped at time : 105 ns : File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/cpu.v" Line 65
+# step
+Stopped at time : 105 ns : File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/cpu.v" Line 70
+# step
+Stopped at time : 105 ns : File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/cpu.v" Line 71
+# step
+Stopped at time : 105 ns : File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/cpu.v" Line 64
+# step
+Stopped at time : 110 ns : File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/test_cpu.v" Line 16
+# step
+Stopped at time : 110 ns : File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/test_cpu.v" Line 15
+# step
+Stopped at time : 110 ns : File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/test_cpu.v" Line 16
+# step
+Stopped at time : 110 ns : File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/memory.v" Line 9
+# step
+Stopped at time : 110 ns : File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/memory.v" Line 10
+# step
+Stopped at time : 110 ns : File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/memory.v" Line 17
+# step
+Stopped at time : 110 ns : File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/memory.v" Line 9
+# step
+Stopped at time : 115 ns : File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/test_cpu.v" Line 16
+# step
+Stopped at time : 115 ns : File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/test_cpu.v" Line 15
+# step
+Stopped at time : 115 ns : File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/test_cpu.v" Line 16
+# step
+Stopped at time : 115 ns : File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/cpu.v" Line 56
+# step
+Stopped at time : 115 ns : File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/cpu.v" Line 57
+# step
+Stopped at time : 115 ns : File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/cpu.v" Line 59
+# step
+Stopped at time : 115 ns : File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/cpu.v" Line 60
+# step
+Stopped at time : 115 ns : File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/cpu.v" Line 56
+# step
+Stopped at time : 115 ns : File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/cpu.v" Line 84
+# step
+Stopped at time : 115 ns : File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/cpu.v" Line 86
+# step
+Stopped at time : 115 ns : File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/cpu.v" Line 88
+# step
+Stopped at time : 115 ns : File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/cpu.v" Line 94
+# step
+Stopped at time : 115 ns : File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/cpu.v" Line 95
+# step
+Stopped at time : 115 ns : File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/cpu.v" Line 96
+# step
+Stopped at time : 115 ns : File "C:/Users/Alex/Desktop/CN/lab09_skel/lab09_skel/cpu.v" Line 97

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1818" delta="unknown" >"C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/ripple_carry_asubstractor_fixture.v" Line 47: Invalid size of integer constant literal
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1818" delta="unknown" >"C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/ripple_carry_asubstractor_fixture.v" Line 48: Invalid size of integer constant literal
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/ripple_carry_subtractor.v" Line 15: Port <arg fmt="%s" index="1">Cout</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/ripple_carry_subtractor.v" Line 22: Port <arg fmt="%s" index="1">Cout</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/ripple_carry_subtractor.v" Line 17: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">A</arg>&gt;. Formal port size is <arg fmt="%d" index="2">8</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/ripple_carry_subtractor.v" Line 19: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">Cin</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="Simulator" num="0" delta="unknown" >Unable to copy libPortabilityNOSH.dll to the simulation executable directory: <arg fmt="%s" index="1">boost::filesystem::copy_file: The system cannot find the path specified, &quot;isim\ripple_carry_asubstractor_fixture_isim_beh.exe.sim\libPortability.dll&quot;</arg>.
+</msg>
+
+</messages>
+

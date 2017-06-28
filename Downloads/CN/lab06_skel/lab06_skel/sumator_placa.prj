@@ -1,0 +1,5 @@
+verilog work "half_adder.v"
+verilog work "full_adder.v"
+verilog work "ripple_carry_adder.v"
+verilog work "ripple_carry_subtractor.v"
+verilog work "sumator_placa.v"

@@ -1,0 +1,33 @@
+xst -intstyle ise -ifn "C:/Users/Alex/Desktop/lab03_skel/lab03_skel/bonus.xst" -ofn "C:/Users/Alex/Desktop/lab03_skel/lab03_skel/bonus.syr" 
+xst -intstyle ise -ifn "C:/Users/Alex/Desktop/lab03_skel/lab03_skel/bonus.xst" -ofn "C:/Users/Alex/Desktop/lab03_skel/lab03_skel/bonus.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc tttttttttt.ucf -p xc6slx16-csg324-3 bonus.ngc bonus.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o bonus_map.ncd bonus.ngd bonus.pcf 
+par -w -intstyle ise -ol high -mt off bonus_map.ncd bonus.ncd bonus.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bonus.twx bonus.ncd -o bonus.twr bonus.pcf -ucf tttttttttt.ucf 
+bitgen -intstyle ise -f bonus.ut bonus.ncd 
+xst -intstyle ise -ifn "C:/Users/Alex/Desktop/lab03_skel/lab03_skel/bonus.xst" -ofn "C:/Users/Alex/Desktop/lab03_skel/lab03_skel/bonus.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc tttttttttt.ucf -p xc6slx16-csg324-3 bonus.ngc bonus.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o bonus_map.ncd bonus.ngd bonus.pcf 
+par -w -intstyle ise -ol high -mt off bonus_map.ncd bonus.ncd bonus.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bonus.twx bonus.ncd -o bonus.twr bonus.pcf -ucf tttttttttt.ucf 
+bitgen -intstyle ise -f bonus.ut bonus.ncd 
+xst -intstyle ise -ifn "C:/Users/Alex/Desktop/lab03_skel/lab03_skel/bonus.xst" -ofn "C:/Users/Alex/Desktop/lab03_skel/lab03_skel/bonus.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc tttttttttt.ucf -p xc6slx16-csg324-3 bonus.ngc bonus.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o bonus_map.ncd bonus.ngd bonus.pcf 
+par -w -intstyle ise -ol high -mt off bonus_map.ncd bonus.ncd bonus.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bonus.twx bonus.ncd -o bonus.twr bonus.pcf -ucf tttttttttt.ucf 
+bitgen -intstyle ise -f bonus.ut bonus.ncd 
+xst -intstyle ise -ifn "C:/Users/Alex/Desktop/lab03_skel/lab03_skel/bonus.xst" -ofn "C:/Users/Alex/Desktop/lab03_skel/lab03_skel/bonus.syr" 
+xst -intstyle ise -ifn "C:/Users/Alex/Desktop/lab03_skel/lab03_skel/bonus.xst" -ofn "C:/Users/Alex/Desktop/lab03_skel/lab03_skel/bonus.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc tttttttttt.ucf -p xc6slx16-csg324-3 bonus.ngc bonus.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o bonus_map.ncd bonus.ngd bonus.pcf 
+par -w -intstyle ise -ol high -mt off bonus_map.ncd bonus.ncd bonus.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bonus.twx bonus.ncd -o bonus.twr bonus.pcf -ucf tttttttttt.ucf 
+bitgen -intstyle ise -f bonus.ut bonus.ncd 
+xst -intstyle ise -ifn "C:/Users/Alex/Desktop/lab03_skel/lab03_skel/bonus.xst" -ofn "C:/Users/Alex/Desktop/lab03_skel/lab03_skel/bonus.syr" 
+xst -intstyle ise -ifn "C:/Users/Alex/Desktop/lab03_skel/lab03_skel/bonus.xst" -ofn "C:/Users/Alex/Desktop/lab03_skel/lab03_skel/bonus.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc tttttttttt.ucf -p xc6slx16-csg324-3 bonus.ngc bonus.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o bonus_map.ncd bonus.ngd bonus.pcf 
+par -w -intstyle ise -ol high -mt off bonus_map.ncd bonus.ncd bonus.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bonus.twx bonus.ncd -o bonus.twr bonus.pcf -ucf tttttttttt.ucf 
+bitgen -intstyle ise -f bonus.ut bonus.ncd 

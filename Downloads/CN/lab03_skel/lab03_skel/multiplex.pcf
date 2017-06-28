@@ -1,0 +1,15 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Mar 13 15:37:52 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "out1" LOCATE = SITE "U16" LEVEL 1;
+COMP "out2" LOCATE = SITE "V16" LEVEL 1;
+COMP "sel0" LOCATE = SITE "V9" LEVEL 1;
+COMP "sel1" LOCATE = SITE "M8" LEVEL 1;
+COMP "reset" LOCATE = SITE "D9" LEVEL 1;
+COMP "button1" LOCATE = SITE "T10" LEVEL 1;
+COMP "button2" LOCATE = SITE "T9" LEVEL 1;
+SCHEMATIC END;
+

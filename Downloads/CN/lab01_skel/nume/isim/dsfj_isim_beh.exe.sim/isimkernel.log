@@ -1,0 +1,29 @@
+Command line:
+   dsfj_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55475
+
+Mon Feb 27 15:52:13 2017
+
+
+ Elaboration Time: 0.078125 sec
+
+ Current Memory Usage: 1494.82 Meg
+
+ Total Signals          : 36
+ Total Nets             : 28
+ Total Signal Drivers   : 20
+ Total Blocks           : 4
+ Total Primitive Blocks : 2
+ Total Processes        : 22
+ Total Traceable Variables  : 22
+ Total Scalar Nets and Variables : 112
+Total Line Count : 20
+
+ Total Simulation Time: 0.078125 sec
+
+ Current Memory Usage: 1022.93 Meg
+
+Mon Feb 27 15:54:07 2017
+

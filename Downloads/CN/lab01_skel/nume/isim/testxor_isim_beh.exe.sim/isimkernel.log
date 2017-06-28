@@ -1,0 +1,29 @@
+Command line:
+   testxor_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55442
+
+Mon Feb 27 15:13:33 2017
+
+
+ Elaboration Time: 0.09375 sec
+
+ Current Memory Usage: 1493.8 Meg
+
+ Total Signals          : 21
+ Total Nets             : 20
+ Total Signal Drivers   : 12
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 14
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 102
+Total Line Count : 26
+
+ Total Simulation Time: 0.125 sec
+
+ Current Memory Usage: 1493.77 Meg
+
+Mon Feb 27 15:14:03 2017
+

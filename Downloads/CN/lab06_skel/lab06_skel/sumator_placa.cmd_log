@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/sumator_placa.xst" -ofn "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/sumator_placa.syr" 
+xst -intstyle ise -ifn "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/sumator_placa.xst" -ofn "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/sumator_placa.syr" 
+xst -intstyle ise -ifn "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/sumator_placa.xst" -ofn "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/sumator_placa.syr" 
+xst -intstyle ise -ifn "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/sumator_placa.xst" -ofn "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/sumator_placa.syr" 
+xst -intstyle ise -ifn "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/sumator_placa.xst" -ofn "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/sumator_placa.syr" 
+xst -intstyle ise -ifn "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/sumator_placa.xst" -ofn "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/sumator_placa.syr" 
+xst -intstyle ise -ifn "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/sumator_placa.xst" -ofn "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/sumator_placa.syr" 
+xst -intstyle ise -ifn "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/sumator_placa.xst" -ofn "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/sumator_placa.syr" 
+xst -intstyle ise -ifn "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/sumator_placa.xst" -ofn "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/sumator_placa.syr" 
+xst -intstyle ise -ifn "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/sumator_placa.xst" -ofn "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/sumator_placa.syr" 
+xst -intstyle ise -ifn "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/sumator_placa.xst" -ofn "C:/Users/Alex/Desktop/CN/lab06_skel/lab06_skel/sumator_placa.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc gfxcvh.ucf -p xc6slx16-csg324-3 sumator_placa.ngc sumator_placa.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o sumator_placa_map.ncd sumator_placa.ngd sumator_placa.pcf 
+par -w -intstyle ise -ol high -mt off sumator_placa_map.ncd sumator_placa.ncd sumator_placa.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml sumator_placa.twx sumator_placa.ncd -o sumator_placa.twr sumator_placa.pcf -ucf gfxcvh.ucf 
+bitgen -intstyle ise -f sumator_placa.ut sumator_placa.ncd 

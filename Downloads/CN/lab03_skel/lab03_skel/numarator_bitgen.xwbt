@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Alex\Desktop\lab03_skel\lab03_skel\numarator.ncd
+OUTFILE=C:\Users\Alex\Desktop\lab03_skel\lab03_skel\numarator.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Users\Alex\Desktop\lab03_skel\lab03_skel
+LICENSE=WebPack
+USER_INFO=211315844_0_0_136
